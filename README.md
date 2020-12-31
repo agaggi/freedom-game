@@ -1,4 +1,4 @@
-# CS 580 Assignment 4
+# Freedom Game (vs. Minimax Algorithm)
 
 ## Program Requirements
 
