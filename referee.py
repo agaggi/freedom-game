@@ -239,8 +239,18 @@ class Referee:
 
             self.get_scores(horizontal)
 
-        # Diagonal check
+        # Vertical check
+        for i in range(len(board)):
 
+            vertical = []
+
+            for j in range(len(board)):
+
+                vertical.append(board[i][j])
+
+            self.get_scores(vertical)
+
+        # Diagonal check
         # Code retreived from first response - https://bit.ly/3ojEgi5
         b_array = np.array(board)
         diagonals = [b_array[::-1, :].diagonal(i) for i in range(-b_array.shape[0] + 1, \
